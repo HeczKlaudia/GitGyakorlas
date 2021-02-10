@@ -6,13 +6,28 @@ body {
 
 main {
     background: pink;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 main, header, nav, footer, article {
     border: 1px solid;
     padding: 5px;
+    box-sizing: border-box;
 }
 
 header, nav, footer, article {
     background: white;
+    margin: 5px;
+}
+
+header, nav, footer {
+    flex: 0 0 100%;
+    /*width: 100%;*/
+}
+
+article {
+    flex: 1 0 calc(33.33333% - 10px);
+    /*width: calc(33.33333% - 10px);*/
 }
