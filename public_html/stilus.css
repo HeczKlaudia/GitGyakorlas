@@ -42,3 +42,18 @@ main article:nth-child(5) {
 header, nav {
     order: -10;
 }
+
+nav, nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 2px;
+}
+
+nav a {
+    text-decoration: none;
+}
